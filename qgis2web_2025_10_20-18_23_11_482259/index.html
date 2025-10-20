@@ -16,25 +16,25 @@
             width: 1108px;
             height: 688px;
         }
-        </style>
-        <title></title>
-    </head>
+        <style>
+        <title><title>
+    <head>
     <body>
         <div id="map">
-        </div>
-        <script src="js/qgis2web_expressions.js"></script>
-        <script src="js/leaflet.js"></script>
-        <script src="js/L.Control.Layers.Tree.min.js"></script>
+        <div>
+        <script src="js/qgis2web_expressions.js"><script>
+        <script src="js/leaflet.js"><script>
+        <script src="js/L.Control.Layers.Tree.min.js"><script>
         <script src="js/leaflet.rotatedMarker.js"></script>
-        <script src="js/leaflet.pattern.js"></script>
-        <script src="js/leaflet-hash.js"></script>
-        <script src="js/Autolinker.min.js"></script>
-        <script src="js/rbush.min.js"></script>
-        <script src="js/labelgun.min.js"></script>
+        <script src="js/leaflet.pattern.js"><script>
+        <script src="js/leaflet-hash.js"><script>
+        <script src="js/Autolinker.min.js"><script>
+        <script src="js/rbush.min.js"><script>
+        <script src="js/labelgun.min.js"><script>
         <script src="js/labels.js"></script>
-        <script src="js/leaflet.photon.js"></script>
-        <script src="data/_1.js"></script>
-        <script src="data/geoo_2.js"></script>
+        <script src="js/leaflet.photon.js"><script>
+        <script src="data/_1.js"><script>
+        <script src="data/geoo_2.js"><script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
@@ -126,17 +126,17 @@
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['รายชื่อพันธุ์ไม้'] !== null ? autolinker.link(String(feature.properties['รายชื่อพันธุ์ไม้']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['หน่วยงานที่พบ'] !== null ? autolinker.link(String(feature.properties['หน่วยงานที่พบ']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Latitude'] !== null ? autolinker.link(String(feature.properties['Latitude']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Longitude'] !== null ? autolinker.link(String(feature.properties['Longitude']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
+                     <tr>\
+                <table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
@@ -184,19 +184,19 @@
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['รายชื่อพันธุ์ไม้'] !== null ? autolinker.link(String(feature.properties['รายชื่อพันธุ์ไม้']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['หน่วยงานที่พบ'] !== null ? autolinker.link(String(feature.properties['หน่วยงานที่พบ']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Latitude'] !== null ? autolinker.link(String(feature.properties['Latitude']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Longitude'] !== null ? autolinker.link(String(feature.properties['Longitude']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
+                    <tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
 			layer.on('popupopen', function(e) {
@@ -242,6 +242,6 @@
         bounds_group.addLayer(layer_geoo_2);
         map.addLayer(layer_geoo_2);
         setBounds();
-        </script>
-    </body>
-</html>
+        <script>
+    <body>
+<html>
